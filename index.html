@@ -1,39 +1,100 @@
-<html>
-  <head>
-    <title>Lumbani's Portfoloi </title>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lumbani's Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-  <body>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    <h1>Online Portfolio</h1>
-    <h2>About me</h2>
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
 
-    <p>Being a self-motivated, self-powered and enthusiastic worker has led me to gain vast experience in many fields. This along with my compassionate and friendly attitude, I have committed my skills to help others, both in my professional and personal life. I ensure that I embrace people from all walks of life, ensuring that no situation will determine that dignity and respect with which someone is treated. I am confident, hard-working and committed to any challenge or task that I take on and will not rest until I have completed the task well. By constantly raising the bar, I ensure that the quality and efficiency of my output is constantly improving.</p>
-    <br>
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
 
-    <h2>Education</h2>
-    <p><b>High School: </b><a href="https://www.sanssouci.co.za/">Sans Souci</a><br>
-  <p><b>Tertiary -Tourism Management <a href="https://www.cput.ac.za/">
-  CPUT</a><br>
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
 
-Next Step:<a href="https://www.hyperiondev.com/">HyperionDev</a> Online Boot Camp </p>
-    <br>
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-    <p>I am currently learning following the languages:</p>
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
 
-    <ol>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Python</li>
-    </ol>
-    <br>
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
 
-    <hr>
-    <h2>Contact me</h2>
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
 
-    <p>This is an email link:
-      <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Send Mail</a>
-    </p>
+<h2>Lumbani's Portfolio </h2>
+<p>Being a self-motivated, self-powered and enthusiastic worker has led me to gain vast experience in many fields. This along with my compassionate and friendly attitude, I have committed my skills to help others, both in my professional and personal life. I ensure that I embrace people from all walks of life, ensuring that no situation will determine that dignity and respect with which someone is treated. I am confident, hard-working and committed to any challenge or task that I take on and will not rest until I have completed the task well. By constantly raising the bar, I ensure that the quality and efficiency of my output is constantly improving.</p>
 
-  </body>
+<header>
+  <h2>Overview</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><img src="https://replit.com/@Lumbaninge/Online-Resume#Lulu (1) (1).jpg" alt="Online-Resume#Luluulu" width="460" height="345"></li>
+      
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
 </html>
